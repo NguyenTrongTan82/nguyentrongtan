@@ -5,7 +5,9 @@
   --color-heading: #1b0760;
   --color-body: #918ca4;
 }
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 /* Typography */
@@ -105,7 +107,7 @@ a {
     font-size: 1.5rem;
   }
   .badge--small {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
 }
 
@@ -122,18 +124,18 @@ a {
 }
 
 .list--tick {
- list-style-image: url(../images/tick.svg);
- padding-left: 4rem;
+  list-style-image: url(../images/tick.svg);
+  padding-left: 4rem;
 }
 .list--tick .list__item {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
-} 
+}
 
 @media screen and (min-width: 1024px) {
   .list--tick .list__item {
     padding-left: 0;
-  } 
+  }
 }
 
 /* icon */
@@ -213,8 +215,27 @@ a {
 .btn--block {
   display: inline-block;
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   .btn {
+    font-size: 1.5rem;
+  }
+}
+/* Input */
+
+.input {
+  padding: 1.5rem 3.5rem;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: 0;
+  color: var(--color-heading);
+  font-size: 2rem;
+}
+
+::placeholder {
+  color: #cdcbc7;
+}
+@media screen and (min-width: 1024px) {
+  .input {
     font-size: 1.5rem;
   }
 }
