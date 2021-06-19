@@ -389,7 +389,7 @@ a {
   position: relative;
   bottom: 10px;
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   .quote {
     font-size: 2rem;
   }
@@ -399,5 +399,22 @@ a {
   .quote__organzation {
     font-size: 1.6rem;
   }
-  
+}
+
+/* Grids */
+
+.grid {
+  display: grid;
+
+}
+
+@media screen and (min-width: 768px){
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px){
+  .grid--1x3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
