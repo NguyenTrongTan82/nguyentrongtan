@@ -190,8 +190,6 @@ a {
   color: white;
   font-weight: 600;
   letter-spacing: 2px;
-  margin: 0 auto 3.5rem auto;
-  width: 50%;
 }
 .btn--secondary:hover {
   background: #23deff;
@@ -199,8 +197,6 @@ a {
 .btn--heading {
   background-color: var(--color-heading);
   color: white;
-  margin: 0 auto 3.5rem auto;
-  width: 80%;
 }
 .btn--heading:hover {
   background: #2b0d97;
@@ -209,8 +205,6 @@ a {
   background: white;
   border: 2px solid var(--color-heading);
   color: var(--color-heading);
-  margin: 0 auto 3.5rem auto;
-  width: 80%;
 }
 .btn--noheading:hover {
   background: var(--color-heading);
@@ -219,13 +213,16 @@ a {
 .btn--accent {
   background-color: var(--color-accent);
   color: white;
-  width: 20%;
 }
 .btn--accent:hover {
   background: #ff4718;
 }
 .btn--block {
   display: inline-block;
+}
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 @media screen and (min-width: 1024px) {
   .btn {
@@ -415,7 +412,6 @@ a {
 
 .grid {
   display: grid;
-
 }
 
 @media screen and (min-width: 768px){
@@ -453,6 +449,44 @@ a {
   }
   .testimonial .quote {
     margin-left: 6rem;
+  }
+  
+}
+/* callout */
+.callout {
+  border-radius: 7px;
+  padding: 4rem;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: white;
+}
+.callout__heading {
+  color: white;
+  margin-top: 0;
+  font-size: 3rem;
+}
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px){
+
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+  .callout__content {
+    text-align: left;
+  }
+  .callout .btn {
+    justify-self: start;
+    margin: 0 2rem;
   }
   
 }
