@@ -659,3 +659,28 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
+
+/* plans block */
+
+
+.block-plans .grid{
+  gap: 5rem 4rem;
+}
+.block-plans .card{
+  max-width: 500px;
+  margin: 0 auto;
+}
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan--popular:hover{
+  transform: scale(1.15);
+}
+.plan {
+  transition: 0.15s ease-out;
+}
+@media screen and (min-width: 1024px) {
+  .plan--popular {
+    transform: scale(1.1);
+  }
+}
